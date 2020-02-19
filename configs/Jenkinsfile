@@ -1,0 +1,17 @@
+#!groovy
+
+pipeline {
+  agent {
+    dockerfile {
+      filename: 'Dockerfile'
+      dir: 'configs'
+    }
+  }
+  stages {
+    stage('啓動') {
+      steps {
+
+      }
+    }
+  }
+}
